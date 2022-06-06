@@ -12,14 +12,87 @@ body {
   position: relative;
   top: 3rem;
   padding: 3rem;
-  gap: 0.8rem;
+  gap: 1rem;
+  padding-bottom: 7rem;
 }
 .container img {
   width: 100%;
   aspect-ratio: 16/9;
   object-fit: cover;
   border-radius: 1.5rem;
-  margin-top: 0.5rem;
+}
+.container div {
+  position: relative;
+}
+.container div::after {
+  content: "\f03d";
+  position: absolute;
+  font-family: FontAwesome;
+  bottom: 5%;
+  right: 5%;
+  color: #05b307;
+  font-size: 3rem;
+}
+.container div::before {
+  background-color: rgba(98, 94, 94, 0.7);
+  padding: 0.5rem;
+  content: "";
+  bottom: 5%;
+  left: 5%;
+  position: absolute;
+  color: white;
+  font-weight: 600;
+}
+.container div:first-child::before {
+  content: "Vaso";
+}
+.container div:nth-child(2)::before {
+  content: "Marcel";
+}
+.container div:nth-child(3)::before {
+  content: "Leo";
+}
+.container div:nth-child(4)::before {
+  content: "Mounsif";
+}
+.container div:nth-child(5)::before {
+  content: "Edwin";
+}
+.container div:nth-child(6)::before {
+  content: "Dominik";
+}
+.container div:nth-child(7)::before {
+  content: "Marwin";
+}
+.container div:nth-child(8)::before {
+  content: "Stephi";
+}
+.container div:nth-child(9)::before {
+  content: "Rahman";
+}
+.container div:nth-child(10)::before {
+  content: "Vural";
+}
+.container div:nth-child(11)::before {
+  content: "Hüseyin";
+}
+.container div:nth-child(12)::before {
+  content: "Muhannad";
+}
+.container div:nth-child(13)::before {
+  content: "Yaman";
+}
+.container div:nth-child(14)::before {
+  content: "Zaid";
+}
+.container div:nth-child(15)::before {
+  content: "Yaroob";
+}
+.container div:nth-child(16)::before {
+  content: "Vladislava";
+}
+.container div:nth-child(17)::before {
+  content: "Ella";
 }
 
 header,
@@ -41,9 +114,9 @@ footer {
   bottom: 0;
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   text-align: center;
-  padding: 1.5rem;
+  padding: 1rem;
 }
 button {
   background-color: #f24423;
@@ -52,6 +125,11 @@ button {
   border-radius: 0.6rem;
   font-size: 1.2rem;
   border: none;
+}
+button:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+  box-shadow: 0 0 15px white;
 }
 
 @media (min-width: 33em) {
@@ -63,6 +141,9 @@ button {
   footer *,
   header {
     font-size: 1.2em;
+  }
+  button {
+    padding-inline: 2.3rem;
   }
 }
 
@@ -76,14 +157,36 @@ button {
   footer * {
     font-size: 1.4em;
   }
+  button {
+    padding-inline: 2.5rem;
+  }
 }
 @media (min-width: 85em) {
   .container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    top: 5rem;
   }
 
   header {
     font-size: 2em;
+  }
+  button {
+    padding-inline: 2.7rem;
+  }
+}
+
+@media (min-width: 100em) {
+  .container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    top: 6rem;
+  }
+
+  header {
+    font-size: 2.2em;
+  }
+  button {
+    padding-inline: 3rem;
   }
 }
