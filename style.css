@@ -126,7 +126,6 @@ button {
   color: aliceblue;
   padding-inline: 1.3rem;
   border-radius: 0.6rem;
-  font-size: 1.2rem;
   border: none;
 }
 button:hover {
@@ -146,10 +145,10 @@ footer div:hover {
   .container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    border-radius: 1rem;
+
     padding-inline: 4rem;
   }
-  footer *,
+  footer,
   header {
     font-size: 1.2em;
   }
