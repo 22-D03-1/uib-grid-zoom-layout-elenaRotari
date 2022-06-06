@@ -119,7 +119,7 @@ footer {
   display: flex;
   justify-content: space-around;
   text-align: center;
-  padding: 1rem;
+  padding: 1.5rem;
 }
 button {
   background-color: #f24423;
@@ -130,14 +130,15 @@ button {
 }
 button:hover {
   transition: 250ms ease-in;
-  transform: scale(0.8);
+  transform: scale(0.98);
 
   cursor: pointer;
   box-shadow: 0 0 15px white;
 }
 footer div:hover {
   transition: 250ms ease-in;
-  transform: scale(0.8);
+  transform: scale(0.98);
+
   cursor: pointer;
 }
 
@@ -150,10 +151,11 @@ footer div:hover {
   }
   footer,
   header {
-    font-size: 1.2em;
+    font-size: 1.1em;
   }
   button {
     padding-inline: 2.3rem;
+    font-size: 1.1em;
   }
 }
 
@@ -165,11 +167,12 @@ footer div:hover {
 
     padding-inline: 6rem;
   }
-  footer * {
-    font-size: 1.4em;
+  footer {
+    font-size: 1.2em;
   }
   button {
     padding-inline: 2.5rem;
+    font-size: 1.2em;
   }
 }
 @media (min-width: 85em) {
@@ -183,8 +186,12 @@ footer div:hover {
   header {
     font-size: 2em;
   }
+  footer {
+    font-size: 1.4em;
+  }
   button {
     padding-inline: 2.7rem;
+    font-size: 1.4em;
   }
 }
 
@@ -199,7 +206,11 @@ footer div:hover {
   header {
     font-size: 2.2em;
   }
+  footer {
+    font-size: 1.6em;
+  }
   button {
     padding-inline: 3rem;
+    font-size: 1.4em;
   }
 }
